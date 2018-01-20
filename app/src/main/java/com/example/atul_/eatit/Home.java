@@ -31,6 +31,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.squareup.picasso.Picasso;
 
 public class Home extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+
     FirebaseDatabase database;
     DatabaseReference category;
     TextView txtFullName;
@@ -91,10 +92,11 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 viewHolder.setItemClickListener(new ItemClickListener() {
                     @Override
                     public void onClick(View view, int position, boolean isLongClick) {
-               //        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
+                        //        Toast.makeText(Home.this, ""+clickItem.getName(), Toast.LENGTH_SHORT).show();
                         Intent foodList = new Intent(Home.this, FoodList.class);
-                     foodList.putExtra("CategoryId",adapter.getRef(position).getKey());
+                        foodList.putExtra("CategoryId", adapter.getRef(position).getKey());
                         startActivity(foodList);
+
                     }
                 });
             }

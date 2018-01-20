@@ -18,7 +18,7 @@ public class MenuViewHolder extends RecyclerView.ViewHolder implements View.OnCl
     public ImageView imageView;
 
     private ItemClickListener itemClickListener;
-    private View view;
+    //private View view;
 
 
     public MenuViewHolder(View itemView) {
