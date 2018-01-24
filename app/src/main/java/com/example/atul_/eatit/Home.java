@@ -133,14 +133,16 @@ public class Home extends AppCompatActivity implements NavigationView.OnNavigati
                 // Handle navigation view item clicks here.
                 int id = item.getItemId();
                  if (id == R.id.nav_menu) {
-                    // Handle the camera action
                 } else if (id == R.id.nav_cart) {
 
-                } else if (id == R.id.nav_order) {
 
-                } else if (id == R.id.nav_logout) {
+                 } else if (id == R.id.nav_orders) {
 
-                }
+
+                 } else if (id == R.id.nav_logout) {
+
+
+                 }
 
                 DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                 drawer.closeDrawer(GravityCompat.START);

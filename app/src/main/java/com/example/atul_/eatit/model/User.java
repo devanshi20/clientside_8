@@ -7,6 +7,7 @@ package com.example.atul_.eatit.model;
 public class User {
     private String Name;
     private  String Password;
+    private String IsStaff;
 
 
 
@@ -18,6 +19,15 @@ public class User {
     {
         Name=name;
         Password=password;
+        IsStaff="false";
+    }
+
+    public String getIsStaff() {
+        return IsStaff;
+    }
+
+    public void setIsStaff(String isStaff) {
+        IsStaff = isStaff;
     }
 
     public String getName() {

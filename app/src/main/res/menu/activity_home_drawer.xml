@@ -3,11 +3,11 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_menu"
-            android:icon="@drawable/ic_restaurant_black_24dp"
-            android:title="Menu" />
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu" />
         <item
             android:id="@+id/nav_cart"
-            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:icon="@drawable/ic_restaurant_black_24dp"
             android:title="Cart" />
         <item
             android:id="@+id/nav_orders"
@@ -20,6 +20,7 @@
 
 
     </group>
+
 
 
 
